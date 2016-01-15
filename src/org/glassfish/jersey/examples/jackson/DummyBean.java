@@ -41,17 +41,17 @@ package org.glassfish.jersey.examples.jackson;
 
 /**
  * Testing bean for ExceptionMappingTestResource.
- *
+ * @author vladimir.kovacevic
  */
 public class DummyBean {
-    private int key;
-    private String value;
+    private int     key;
+    private String  value;
 
     public String getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(final String value) {
         this.value = value;
     }
 
@@ -59,7 +59,7 @@ public class DummyBean {
         return key;
     }
 
-    public void setKey(int key) {
+    public void setKey(final int key) {
         this.key = key;
     }
 
